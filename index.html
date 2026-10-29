@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Online Shop | فروشگاه پوشاک</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <h1>Online Shop</h1>
+
+        <nav>
+            <a href="#home">خانه</a>
+            <a href="#products">محصولات</a>
+            <a href="#tryon">پرو مجازی</a>
+        </nav>
+
+        <button id="cartButton">
+            🛒 سبد خرید: <span id="cartCount">0</span>
+        </button>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <h2>استایل خودتو کشف کن!</h2>
+
+            <p>
+                جدیدترین لباس‌ها را انتخاب کن و استایل دلخواهت
+                را با کمک هوش مصنوعی تصور کن.
+            </p>
+
+            <a href="#products" class="button">
+                مشاهده محصولات
+            </a>
+        </section>
+
+        <section class="products-section" id="products">
+            <h2>محصولات فروشگاه</h2>
+
+            <div class="products" id="productList"></div>
+        </section>
+
+        
+    </main>
+<section class="virtual-fitting">
+    <h2>پرو مجازی | Online Shop</h2>
+    <p>لباس موردنظرت رو انتخاب کن و روی مدل ببین!</p>
+
+    <label for="clothingSelect">انتخاب لباس:</label>
+    <select id="clothingSelect">
+        <option value="white-tshirt">تی‌شرت سفید</option>
+        <option value="black-hoodie">هودی مشکی</option>
+        <option value="shirt">پیراهن مردانه</option>
+        <option value="jacket">کاپشن مردانه</option>
+    </select>
+
+    <div class="virtual-preview">
+        <img
+            id="virtualModelImage"
+            src="images/models/male.png"
+            alt="مدل مردانه"
+        >
+    </div>
+
+    <p id="virtualModelMessage">
+        برای شروع، لباس موردنظرت رو انتخاب کن.
+    </p>
+</section>
+    <footer>
+        <p>Online Shop | پروژه طراحی فروشگاه پوشاک</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+
+</body>
+</html>

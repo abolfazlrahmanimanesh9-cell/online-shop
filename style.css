@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Tahoma, Arial, sans-serif;
+    background: #f7f7f7;
+    color: #222;
+    line-height: 1.8;
+}
+
+.navbar {
+    background: #fff;
+    padding: 18px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #eee;
+}
+
+.navbar h1 {
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+button,
+.button {
+    background: #171717;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font: inherit;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover,
+.button:hover {
+    background: #444;
+}
+
+.hero {
+    text-align: center;
+    padding: 85px 20px;
+    background: #eae7e2;
+}
+
+.hero h2 {
+    font-size: 36px;
+}
+
+.products-section,
+.tryon {
+    padding: 50px 6%;
+}
+
+.products-section h2,
+.tryon h2 {
+    text-align: center;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(220px, 1fr)
+    );
+    gap: 24px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 3px 12px #0000000a;
+}
+
+.product-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.tryon {
+    background: #fff;
+    text-align: center;
+}
+
+.tryon input {
+    display: block;
+    margin: 12px auto 24px;
+    max-width: 100%;
+}
+
+#tryResult {
+    margin-top: 24px;
+}
+
+#tryResult img {
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 12px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #171717;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .hero h2 {
+        font-size: 27px;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+}
+
+
+.virtual-fitting {
+    direction: rtl;
+    text-align: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.virtual-fitting img {
+    max-width: 100%;
+    height: auto;
+}
+
+.virtual-fitting select,
+.virtual-fitting button {
+    margin: 10px;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
