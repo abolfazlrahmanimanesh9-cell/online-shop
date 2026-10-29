@@ -3,13 +3,13 @@ const products = [
         id: 1,
         name: "تی‌شرت سفید",
         price: 250000,
-        image: "images/products/white-tshirt.jpg"
+          image: "white-tshirt.jpg"
     },
     {
         id: 2,
         name: "هودی مشکی",
         price: 890000,
-        image: "images/products/black-hoodie.jpg"
+        image: "black-hoodie.jpg"
     },
     
         
@@ -18,14 +18,14 @@ const products = [
         id: 4,
         name: "کاپشن مردانه",
         price: 1450000,
-        image: "images/products/jacket.jpg"
+       image: "jacket.jpg"
     }
     ,
 {
     id: 5,
     name: "پیراهن مردانه",
     price: 550000,
-    image: "images/products/shirt.jpg"
+    image: "shirt.jpg"
 }
 ];
 
@@ -89,10 +89,10 @@ const virtualModelImage = document.getElementById("virtualModelImage");
 const virtualModelMessage = document.getElementById("virtualModelMessage");
 
 const clothingImages = {
-    "white-tshirt": "images/products/white-tshirt.jpg",
-    "black-hoodie": "images/products/black-hoodie.jpg",
-    "shirt": "images/products/shirt.jpg",
-    "jacket": "images/products/jacket.jpg"
+    "white-tshirt": "white-tshirt.jpg",
+    "black-hoodie": "black-hoodie.jpg",
+    "shirt": "shirt.jpg",
+    "jacket": "jacket.jpg"
 };
 
 if (clothingSelect && virtualModelImage) {
